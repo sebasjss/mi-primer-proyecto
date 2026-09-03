@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusAI Solutions | Portafolio ADSO - SENA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef8ff',
+                            100: '#d9f0ff',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0369a1',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        },
+                        eco: {
+                            500: '#10b981',
+                            600: '#059669'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-eco-500 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-brain text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">NexusAI Solutions</span>
+                    <span class="block text-xs text-slate-400">ADSO - SENA</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#inicio" class="text-slate-300 hover:text-cyan-400 transition-colors">Inicio</a>
+                <a href="#equipo" class="text-slate-300 hover:text-cyan-400 transition-colors">Quiénes Somos</a>
+                <a href="#proyectos" class="text-slate-300 hover:text-cyan-400 transition-colors">Portafolio</a>
+                <a href="#tecnologias" class="text-slate-300 hover:text-cyan-400 transition-colors">Tecnologías</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#proyectos" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-medium bg-cyan-500 hover:bg-cyan-600 text-slate-950 transition-all shadow-lg shadow-cyan-500/20">
+                    Ver Proyectos
+                </a>
+                <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="block text-slate-300 hover:text-cyan-400 py-1">Inicio</a>
+            <a href="#equipo" class="block text-slate-300 hover:text-cyan-400 py-1">Quiénes Somos</a>
+            <a href="#proyectos" class="block text-slate-300 hover:text-cyan-400 py-1">Portafolio</a>
+            <a href="#tecnologias" class="block text-slate-300 hover:text-cyan-400 py-1">Tecnologías</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-cyan-400 mb-6">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Servicio Nacional de Aprendizaje (SENA) • ADSO V2</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight mb-6">
+                Transformando el futuro digital con <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Inteligencia Artificial</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-light">
+                Soluciones de software de alta escalabilidad integradas con redes neuronales, PLN y visión artificial diseñadas por <strong class="text-slate-200 font-semibold">NexusAI Solutions</strong>.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#proyectos" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 hover:opacity-90 transition-all shadow-xl shadow-cyan-500/20 flex items-center justify-center space-x-2">
+                    <span>Explorar Proyectos</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#equipo" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 transition-all flex items-center justify-center space-x-2">
+                    <span>Conocer el Equipo</span>
+                    <i class="fa-solid fa-users text-sm"></i>
+                </a>
+            </div>
+
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto pt-10 border-t border-slate-800/80">
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-bold text-cyan-400 mb-1">3</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Proyectos de IA</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-bold text-emerald-400 mb-1">ADSO</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Programa SENA</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-bold text-cyan-400 mb-1">100%</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Escalables</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-bold text-emerald-400 mb-1">Visión/PLN</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider">Modelos de IA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="py-24 bg-slate-900/50 border-t border-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Quiénes Somos</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-6">NexusAI Solutions</h3>
+                <p class="text-slate-400 leading-relaxed font-light">
+                    Nombre concebido bajo la visión de integrar ecosistemas de software modernos con modelos avanzados de inteligencia artificial (redes neuronales, procesamiento de lenguaje natural y visión artificial), logrando soluciones altamente escalables orientadas a transformar digitalmente sectores productivos y sociales críticos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                        JV
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-1">Juan Sebastian Villa</h4>
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Líder de equipo</span>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-teal-500 to-emerald-600 flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                        JH
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-1">Juan David Hernandez</h4>
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Relator</span>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                        GH
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-1">Greis Huila</h4>
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">Investigador</span>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                        JP
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-1">Jheraldin</h4>
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">Diseñador de ideas</span>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                        AZ
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-1">Angie Zapata</h4>
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20">Analista técnico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS: VISTA PREVIA RESUMIDA (COMO LA PRIMERA IMAGEN) + MODAL CON TEXTO COMPLETO (COMO LA SEGUNDA IMAGEN) -->
+    <section id="proyectos" class="py-24 border-t border-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Portafolio ADSO</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-6">Proyectos de Software con IA</h3>
+                <p class="text-slate-400 font-light">
+                    Haz clic en cualquiera de las tarjetas para ver la información detallada completa en el modal.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Proyecto 1: Face ID SENA (Vista Previa) -->
+                <div onclick="openModal('modal-1')" class="bg-slate-900 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between hover:border-cyan-500/60 hover:scale-[1.01] cursor-pointer transition-all shadow-xl group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="p-3 rounded-2xl bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 group-hover:bg-cyan-500/25 transition-colors">
+                                <i class="fa-solid fa-camera-rotate text-xl"></i>
+                            </span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">PROYECTO 01</span>
+                        </div>
+                        
+                        <h4 class="text-2xl font-bold text-white mb-2">📸 Face ID SENA</h4>
+                        <p class="text-sm font-medium text-cyan-400 mb-4">Control de acceso y dispositivos tecnológicos con IA</p>
+                        
+                        <div class="space-y-3 text-sm text-slate-300">
+                            <div>
+                                <strong class="text-white block mb-1">⚠️ Problema:</strong>
+                                <p class="text-slate-400 font-light">Cuellos de botella operativos en entradas por control manual de portátiles en bitácoras o...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-slate-800/80">
+                        <div class="flex items-center justify-between text-xs text-cyan-400 font-medium">
+                            <span>Haz clic para expandir y leer más</span>
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: LitografiaBot IA (Vista Previa) -->
+                <div onclick="openModal('modal-2')" class="bg-slate-900 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between hover:border-amber-500/60 hover:scale-[1.01] cursor-pointer transition-all shadow-xl group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="p-3 rounded-2xl bg-amber-500/15 text-amber-400 border border-amber-500/30 group-hover:bg-amber-500/25 transition-colors">
+                                <i class="fa-solid fa-print text-xl"></i>
+                            </span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">PROYECTO 02</span>
+                        </div>
+                        
+                        <h4 class="text-2xl font-bold text-white mb-2">💬 LitografiaBot IA</h4>
+                        <p class="text-sm font-medium text-cyan-400 mb-4">Asistente conversacional para atención y cotización en litografías</p>
+                        
+                        <div class="space-y-3 text-sm text-slate-300">
+                            <div>
+                                <strong class="text-white block mb-1">⚠️ Problema:</strong>
+                                <p class="text-slate-400 font-light">Procesos manuales de cotización sujetos a la experiencia del asesor con múltiples variables...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-slate-800/80">
+                        <div class="flex items-center justify-between text-xs text-amber-400 font-medium">
+                            <span>Haz clic para expandir y leer más</span>
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Estanquillo IA (Vista Previa) -->
+                <div onclick="openModal('modal-3')" class="bg-slate-900 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between hover:border-emerald-500/60 hover:scale-[1.01] cursor-pointer transition-all shadow-xl group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="p-3 rounded-2xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 group-hover:bg-emerald-500/25 transition-colors">
+                                <i class="fa-solid fa-cart-shopping text-xl"></i>
+                            </span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">PROYECTO 03</span>
+                        </div>
+                        
+                        <h4 class="text-2xl font-bold text-white mb-2">🛒 Estanquillo IA</h4>
+                        <p class="text-sm font-medium text-cyan-400 mb-4">Sistema inteligente de inventario predictivo y ventas</p>
+                        
+                        <div class="space-y-3 text-sm text-slate-300">
+                            <div>
+                                <strong class="text-white block mb-1">⚠️ Problema:</strong>
+                                <p class="text-slate-400 font-light">Descuadres en caja, filas lentas en horas pico y pérdidas económicas por desconocimiento...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-slate-800/80">
+                        <div class="flex items-center justify-between text-xs text-emerald-400 font-medium">
+                            <span>Haz clic para expandir y leer más</span>
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL 1: Face ID SENA (Texto Completo - Como la segunda imagen) -->
+    <div id="modal-1" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-cyan-500/50 rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-1')" class="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="p-3 rounded-2xl bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">
+                    <i class="fa-solid fa-camera-rotate text-xl"></i>
+                </span>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">PROYECTO 01 DETALLADO</span>
+                    <h4 class="text-2xl font-bold text-white">📸 Face ID SENA</h4>
+                </div>
+            </div>
+            <p class="text-sm font-medium text-cyan-400 mb-6">Control de acceso y dispositivos tecnológicos con IA</p>
+            <div class="space-y-4 text-sm text-slate-300 mb-6">
+                <div>
+                    <strong class="text-white block mb-1">⚠️ Problema:</strong>
+                    <p class="text-slate-400 font-light">Cuellos de botella operativos en entradas por control manual de portátiles en bitácoras o revisión visual de carnés, generando congestión y demoras.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">💻 Descripción:</strong>
+                    <p class="text-slate-400 font-light">Software de control de acceso inteligente basado en visión artificial y reconocimiento biométrico vinculado a la base de datos institucional.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">🟣 Componente de IA:</strong>
+                    <p class="text-slate-400 font-light">Visión artificial y modelos de reconocimiento biométrico facial en tiempo real para validación de aprendices y equipos.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">👥 Usuarios objetivo:</strong>
+                    <p class="text-slate-400 font-light">Aprendices, instructores, personal de seguridad y administración del SENA.</p>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-slate-800">
+                <strong class="text-xs text-cyan-400 block uppercase tracking-wider mb-1">✅ VALOR AGREGADO</strong>
+                <p class="text-xs text-slate-400 font-light">Agiliza el ingreso al centro de formación, optimiza la seguridad tecnológica y elimina registros manuales ineficientes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: LitografiaBot IA (Texto Completo) -->
+    <div id="modal-2" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-amber-500/50 rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-2')" class="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="p-3 rounded-2xl bg-amber-500/15 text-amber-400 border border-amber-500/30">
+                    <i class="fa-solid fa-print text-xl"></i>
+                </span>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">PROYECTO 02 DETALLADO</span>
+                    <h4 class="text-2xl font-bold text-white">💬 LitografiaBot IA</h4>
+                </div>
+            </div>
+            <p class="text-sm font-medium text-cyan-400 mb-6">Asistente conversacional para atención y cotización en litografías</p>
+            <div class="space-y-4 text-sm text-slate-300 mb-6">
+                <div>
+                    <strong class="text-white block mb-1">⚠️ Problema:</strong>
+                    <p class="text-slate-400 font-light">Procesos manuales de cotización sujetos a la experiencia del asesor con múltiples variables complejas, causando demoras y errores humanos.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">💻 Descripción:</strong>
+                    <p class="text-slate-400 font-light">Asistente virtual interactivo en web o pantalla táctil que traduce requerimientos en lenguaje coloquial a cotizaciones exactas automáticas.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">🟣 Componente de IA:</strong>
+                    <p class="text-slate-400 font-light">Inteligencia artificial generativa y Procesamiento de Lenguaje Natural (PLN) para interpretación semántica de solicitudes.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">👥 Usuarios objetivo:</strong>
+                    <p class="text-slate-400 font-light">Clientes de artes gráficas, administradores y personal operativo de litografías.</p>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-slate-800">
+                <strong class="text-xs text-amber-400 block uppercase tracking-wider mb-1">✅ VALOR AGREGADO</strong>
+                <p class="text-xs text-slate-400 font-light">Reduce tiempos de respuesta al cliente a segundos, estandariza tarifas comerciales y optimiza la capacidad de ventas automatizadas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Estanquillo IA (Texto Completo) -->
+    <div id="modal-3" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-emerald-500/50 rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-3')" class="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="p-3 rounded-2xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                </span>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400">PROYECTO 03 DETALLADO</span>
+                    <h4 class="text-2xl font-bold text-white">🛒 Estanquillo IA</h4>
+                </div>
+            </div>
+            <p class="text-sm font-medium text-cyan-400 mb-6">Sistema inteligente de inventario predictivo y ventas</p>
+            <div class="space-y-4 text-sm text-slate-300 mb-6">
+                <div>
+                    <strong class="text-white block mb-1">⚠️ Problema:</strong>
+                    <p class="text-slate-400 font-light">Descuadres en caja, filas lentas en horas pico y pérdidas económicas por desconocimiento de stock real o mermas no registradas.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">💻 Descripción:</strong>
+                    <p class="text-slate-400 font-light">Sistema integral de gestión de ventas por voz o escaneo rápido con reposición automática mediante pronósticos predictivos.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">🟣 Componente de IA:</strong>
+                    <p class="text-slate-400 font-light">Modelos de Machine Learning para pronóstico de demanda estacional, procesamiento de comandos por voz y detección de anomalías en inventario.</p>
+                </div>
+                <div>
+                    <strong class="text-white block mb-1">👥 Usuarios objetivo:</strong>
+                    <p class="text-slate-400 font-light">Comerciantes de licores y abarrotes, cajeros, administradores y proveedores.</p>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-slate-800">
+                <strong class="text-xs text-emerald-400 block uppercase tracking-wider mb-1">✅ VALOR AGREGADO</strong>
+                <p class="text-xs text-slate-400 font-light">Minimiza el desabastecimiento en fechas críticas, previene robos hormiga y acelera las transacciones comerciales en el punto de venta.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="tecnologias" class="py-24 bg-slate-900/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Stack Tecnológico</h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-white mb-6">Tecnologías y Metodología</h3>
+            <p class="text-slate-400 max-w-2xl mx-auto mb-16 font-light">
+                Herramientas de vanguardia implementadas en el ciclo de vida del software para garantizar modelos de IA eficientes y arquitecturas robustas.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-brands fa-python text-3xl text-cyan-400"></i>
+                    <span class="text-sm font-medium text-slate-200">Python</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-solid fa-brain text-3xl text-emerald-400"></i>
+                    <span class="text-sm font-medium text-slate-200">Machine Learning</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-solid fa-chart-line text-3xl text-blue-400"></i>
+                    <span class="text-sm font-medium text-slate-200">Redes LSTM</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-solid fa-eye text-3xl text-purple-400"></i>
+                    <span class="text-sm font-medium text-slate-200">Redes CNN</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-solid fa-comments text-3xl text-amber-400"></i>
+                    <span class="text-sm font-medium text-slate-200">NLP (PLN)</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-solid fa-code text-3xl text-teal-400"></i>
+                    <span class="text-sm font-medium text-slate-200">Web / Móvil</span>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center space-y-3 hover:border-cyan-500/50 transition-all">
+                    <i class="fa-solid fa-wifi text-3xl text-rose-400"></i>
+                    <span class="text-sm font-medium text-slate-200">IoT Sensores</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2026 NexusAI Solutions - Análisis y Desarrollo de Software (ADSO) SENA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Funciones para abrir y cerrar modales de proyectos
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.addEventListener('click', (e) => {
+            ['modal-1', 'modal-2', 'modal-3'].forEach(id => {
+                const modal = document.getElementById(id);
+                if (e.target === modal) {
+                    closeModal(id);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
